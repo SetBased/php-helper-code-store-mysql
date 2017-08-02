@@ -2,10 +2,13 @@
 //----------------------------------------------------------------------------------------------------------------------
 namespace SetBased\Helper\CodeStore\Test;
 
+use PHPUnit\Framework\TestCase;
 use SetBased\Helper\CodeStore\MySqlCompoundSyntaxCodeStore;
 
-//----------------------------------------------------------------------------------------------------------------------
-class MySqlCompoundSyntaxCodeStoreTest extends \PHPUnit_Framework_TestCase
+/**
+ * Test cases for class MySqlCompoundSyntaxCodeStore.
+ */
+class MySqlCompoundSyntaxCodeStoreTest extends TestCase
 {
   //--------------------------------------------------------------------------------------------------------------------
   /**
