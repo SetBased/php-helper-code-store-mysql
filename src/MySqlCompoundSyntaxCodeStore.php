@@ -1,8 +1,7 @@
 <?php
-//----------------------------------------------------------------------------------------------------------------------
+
 namespace SetBased\Helper\CodeStore;
 
-//----------------------------------------------------------------------------------------------------------------------
 /**
  * A helper class for automatically generating MySQL compound syntax code with proper indentation.
  */
@@ -12,7 +11,7 @@ class MySqlCompoundSyntaxCodeStore extends CodeStore
   /**
    * {@inheritdoc}
    */
-  protected function indentationMode($line)
+  protected function indentationMode(string $line): int
   {
     $mode = 0;
 
