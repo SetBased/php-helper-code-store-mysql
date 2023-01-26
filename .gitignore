@@ -1,6 +1,6 @@
 /.idea
-/bin/phing
-/bin/phpunit
+/.phpunit.result.cache
+/bin/
 /composer.lock
 /custom.task.properties
 /custom.type.properties

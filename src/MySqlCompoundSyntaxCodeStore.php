@@ -18,12 +18,12 @@ class MySqlCompoundSyntaxCodeStore extends CodeStore
 
     $line = trim($line);
 
-    if (substr($line, 0, 5)=='begin' || substr($line, 0, 2)=='if' || substr($line, -4, 4)=='loop')
+    if (str_starts_with($line, 'begin') || str_starts_with($line, 'if') || str_ends_with($line, 'loop'))
     {
       $mode |= self::C_INDENT_INCREMENT_AFTER;
     }
 
-    if (substr($line, 0, 3)=='end')
+    if (str_starts_with($line, 'end'))
     {
       $mode |= self::C_INDENT_DECREMENT_BEFORE;
     }
